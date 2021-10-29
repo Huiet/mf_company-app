@@ -2,11 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "@common/utilities": [
-        "src/app/utilities.ts"
-      ]
-    },
+    "paths": {},
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

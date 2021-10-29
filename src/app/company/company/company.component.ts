@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilitiesService } from "shell/Utilities";
 
-// import { FOOBAR } from '@common/utilities';
 @Component({
   selector: 'app-company',
   templateUrl: './company.component.html',
   styleUrls: ['./company.component.scss']
 })
 export class CompanyComponent implements OnInit {
+  valueOfFoo = '';
 
-
-  constructor() { }
+  constructor(
+    private foobar: UtilitiesService
+  ) {}
 
   ngOnInit(): void {
-    // console.log('foo', FOO);
-    // console.log('foo', FOOBAR);
+    this.valueOfFoo = this.foobar.getFoo();
   }
 
 }
